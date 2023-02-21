@@ -210,7 +210,7 @@ const productos = [
 const contenedorProductos = document.querySelector("#contenedorProductos");
 const botonLat = document.querySelectorAll(".boton-lateral");
 // const titulosPrincipales = document.querySelector("#primerTitulo");
-// const agregarProductos = document.querySelector ("productoAgregar"); 
+// let agregarProductos = document.querySelectorAll (".productoAgregar"); 
 
 
 function cargarProductos(productosSeleccionados) {
@@ -251,15 +251,18 @@ botonLat.forEach(boton => {
 
 
 function agregarProductos(){
-    botonProducto = document.querySelector("productoAgregar")
-    botonProducto.forEach (boton => {
+    const botonesProducto = document.querySelectorAll(".productoAgregar")
+    botonesProducto.forEach ((boton) => {
         boton.addEventListener("click", añadirAlCarrito)
     })
 }
 
-const productosCarrito = [] 
+cargarProductos(productos);
+agregarProductos(); 
 
-function añadirAlCarrito(e){
-    const id = e.currentTarget.id
-    console.log(id)
-} 
+// const productosCarrito = [] 
+
+// function añadirAlCarrito(e){
+//     const id = e.currentTarget.id
+//     console.log(id)
+// } 
