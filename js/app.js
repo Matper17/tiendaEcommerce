@@ -260,9 +260,12 @@ function agregarProductos(){
 cargarProductos(productos);
 agregarProductos(); 
 
-// const productosCarrito = [] 
+const productosCarrito = [] 
 
-// function añadirAlCarrito(e){
-//     const id = e.currentTarget.id
-//     console.log(id)
-// } 
+function añadirAlCarrito(e){
+    const idBoton = e.currentTarget.id
+    const productoAgregado = productos.find (producto => producto.id === idBoton)
+
+    productosCarrito.push(productoAgregado)
+} 
+
