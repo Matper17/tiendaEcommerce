@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP Training Ecommerce</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">MP Training Force</h1>
+            </header>
+            <ul class="menu">
+                <li>
+                    <button id="todosLosProd" class="botonMenu boton-lateral">
+                        <i class="bi bi-arrow-right-circle"></i>Todos los productos
+                    </button>
+                </li>
+                <li>
+                    <button id="productos" class="botonMenu boton-lateral active">
+                        <i class="bi bi-arrow-right-circle"></i>Productos
+                    </button>
+                </li>
+                <li>
+                    <button id="servicios" class="botonMenu boton-lateral">
+                        <i class="bi bi-arrow-right-circle"></i>Servicios
+                    </button>
+                </li>
+                <li>
+                    <a class="botonMenu botonCarrito" href="./carrito.html"><i class="bi bi-arrow-right-circle"></i>Carrito 
+                        <span class="contador"><i class="bi bi-cart3"></i>  0</span>
+                    </a>
+                </li>
+            </ul>
+            <footer>
+                <p class="textoFooter">© 2023 copyright ~ Todos los derechos reservados</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="tituloPrincipal"> MP Training Force </h2>
+            <div id="contenedorProductos">
+                <!-- ESTO ESTA ESCRITO EN JAVASCRIPT 
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/dumbells.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Dumbells 10kg</h3>
+                            <p class="productoPrecio">$12000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/barraOlimpica.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Barra olímpica 20kg</h3>
+                            <p class="productoPrecio">$40000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/discosBumper.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Set discos bumper 100kg</h3>
+                            <p class="productoPrecio">$100000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/sogaSalto.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Soga de salto</h3>
+                            <p class="productoPrecio">$5000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/barraW.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Barra W</h3>
+                            <p class="productoPrecio">$20000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/conosTortuga.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Set de conos 40 unidades</h3>
+                            <p class="productoPrecio">$3000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/kitBodyPump.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Kit body pump 17kg</h3>
+                            <p class="productoPrecio">$16500</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="./Images/medBall.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Medball 20kg</h3>
+                            <p class="productoPrecio">$8000</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div> 
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="/Images/ronnieColeman.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Plan de fuerza</h3>
+                            <p class="productoPrecio">$4000 Mensual</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="/Images/resistenciaAerobica.jfif" alt="">
+                            <div class="productoTipos">
+                                <h3 class="productoTitulo">Plan de fuerza</h3>
+                                <p class="productoPrecio">$4000 Mensual</p>
+                                <button class="productoAgregar">Añadir al carrito</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="productoContenedor">
+                    <div class="producto">
+                        <img class="productoImagen" src="/Images/preparacionFisicaGral.jfif" alt="">
+                        <div class="productoTipos">
+                            <h3 class="productoTitulo">Plan de fuerza</h3>
+                            <p class="productoPrecio">$4000 Mensual</p>
+                            <button class="productoAgregar">Añadir al carrito</button>
+                        </div>
+                    </div>
+                </div>-->
+            </div>            
+        </main>
+    </div>    
+    <script src="./js/app.js"></script>
+</body>
+</html>
